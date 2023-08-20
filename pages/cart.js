@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Center from "@/components/Center";
 import Button from "@/components/Button";
 import {useContext, useEffect, useState} from "react";
-import {CartContext} from "@/components/CartContext";
+import {CartContext, clearCart} from "@/components/CartContext";
 import axios from "axios";
 import Table from "@/components/Table";
 import Input from "@/components/Input";
