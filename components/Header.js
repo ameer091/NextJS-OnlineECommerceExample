@@ -28,7 +28,7 @@ padding: 20px 0;
 `;
 
 const StyledNav = styled.nav`
-${props => props.mobileNavActive ? `
+${props => props.$mobileNavActive ? `
 display: block;
 ` : `
 display: none;
@@ -82,7 +82,7 @@ export default function Header() {
       <Center>
         <Wrapper>
       <Logo href={'/'}>Online Store</Logo>
-      <StyledNav mobileNavActive={mobileNavActive}>
+      <StyledNav $mobileNavActive={mobileNavActive}>
         <NavLinks href={'/'}>Home</NavLinks>
         <NavLinks href= {'/products'}>All Products</NavLinks>
         <NavLinks href= {'/categories'}>Categories</NavLinks>
